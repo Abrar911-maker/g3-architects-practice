@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-normal-font {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Shared styles */
+
+  .display-flex{
+    display: flex;
+  }
+
+  .bg-primary{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+  .dark-01{
+    color: rgba(19, 19, 19, 1);
+  }
+
+  .dark-02{
+    color: rgba(66, 66, 66, 1);
+  }
+
+  .dark-03{
+    color: rgba(114, 114, 114, 1);
+  }
+
+  .section-title{
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+
+  .btn-primary{
+    background-color: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  main{
+   max-width: 1440px;
+   margin: 0 auto;
+  }
+
+  main > section{
+    margin-top: 130px;
+  }
+
+  /* Header related styles */
+
+  .navbar{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand{
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .nav-item {
+    list-style: none;
+    margin-right: 30px;
+  }
+
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500px;
+  }
+
+  /* Banner related styles */
+  
+  .banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .banner-img{
+    width: 100%;
+  }
+
+  .banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  .banner-description{
+    font-size: 1rem;
+  }
+
+  /* Features related styles */
+
+  .team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .teams{
+    align-items: center;
+  }
+  
+  .features{
+    margin-left: 93px;
+    max-width: 530px;
+  }
+
+  #quick-list{
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  
+  #of-our{
+    font-size: 2.8rem;
+    font-weight: 800;
+  }
+
+  #feature{
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #FF900E;
+  }
+
+.explore-more{
+ margin-top: 12px;
+}
+
+
+/* Small size device media query */
+
+@media screen and (max-width: 576px){
+    .navbar,
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features{
+        margin-left: 50px;
+    }
+    .explore-more{
+        margin-left: 80px;
+    }
+
+}
+
+/* Medium size divice medua query */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
