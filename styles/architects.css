@@ -148,6 +148,7 @@ main > section {
 
 .feature {
   gap: 100px;
+  margin-bottom: 0px;
 }
 
 .features-title {
@@ -202,6 +203,7 @@ main > section {
 
 .some-facts{
   display: grid;
+  margin-top: 0px;
 }
 
 .facts-container{
